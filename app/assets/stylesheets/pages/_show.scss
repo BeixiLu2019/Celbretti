@@ -1,0 +1,27 @@
+.show-container {
+  padding: 15px;
+  margin: auto;
+  h6 {
+    color: #5b6175;
+    font-size: 20px;
+    margin: 0;
+  }
+  i {
+    margin-right: 5px;
+  }
+  p {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+}
+
+.name-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  img {
+    width: 20px;
+    height:20px;
+    object-fit:cover;
+  }
+}
