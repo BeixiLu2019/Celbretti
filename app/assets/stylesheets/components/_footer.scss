@@ -1,14 +1,19 @@
 .footer {
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  padding: 0px 50px;
-  color: $gray;
-  font-size: 14px;
+    align-content: space-around;
+    background: #f7e2d4;
+    display: flex;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    height: 80px;
+    padding: 0px 50px;
+    color: #0E0000;
+    font-size: 14px;
+    flex-direction: column;
 }
 
 .footer .fa-heart {
-  color: $brand-color;
+  color: $light-gray;
 }
