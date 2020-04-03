@@ -14,8 +14,13 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'sassc-rails'
 gem 'simple_form'
+gem 'jquery-rails'
+gem 'bootstrap'
 gem 'uglifier'
 gem 'webpacker'
+gem 'summernote-rails', '~> 0.8.12.0'
+gem 'turbolinks'
+gem 'coffee-rails', '~> 4.1', '>= 4.1.1'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
