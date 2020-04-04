@@ -2,15 +2,21 @@
 @import "home";
 @import "show";
 
-.container{
-  padding-top: 20px;
-  .h1{
-    font-weight: bold;
-  }
-  .h2 {
-    outline-color: black;
-  }
-  .bakery {
-  padding-top: 20px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  height: 100%;
+}
+
+#container {
+  min-height: 100%;
+
+}
+#main {
+  overflow: auto;
+  padding-bottm: 100px;
+  // background: url(https://res.cloudinary.com/dvpcxhofq/image/upload/v1584992007/background_myxhfb.png) no-repeat center center fixed;
+  // height: 2000px;
 }
