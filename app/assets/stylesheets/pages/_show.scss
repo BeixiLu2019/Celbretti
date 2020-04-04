@@ -1,27 +1,19 @@
 .show-container {
-  padding: 15px;
-  margin: auto;
-  h6 {
-    color: #5b6175;
-    font-size: 20px;
-    margin: 0;
-  }
-  i {
-    margin-right: 5px;
+    padding: 15px;
+    margin: 30px;
+  h1 {
+    font-size: 36px;
   }
   p {
-    font-size: 18px;
-    margin-left: 5px;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+  a {
+    color: black;
+    font-weight: lighter;
+     &:hover{
+      color: black;
+      text-decoration: none;
+    }
   }
 }
-
-// .name-logo {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: baseline;
-//   img {
-//     width: 20px;
-//     height:20px;
-//     object-fit:cover;
-//   }
-// }
