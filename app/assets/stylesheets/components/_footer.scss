@@ -7,13 +7,18 @@
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: center;
-    height: 80px;
-    padding: 0px 50px;
+    height: 100px;
+    padding: 45px;
     color: #0E0000;
     font-size: 14px;
+    margin-top: -100px;
     flex-direction: column;
+    clear: both;
 }
 
+.footer .container-fixed {
+  padding: 0;
+}
 .footer .fa-heart {
   color: $light-gray;
 }

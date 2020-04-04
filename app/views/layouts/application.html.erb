@@ -11,15 +11,18 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/flashes' %>
-    <%= yield %>
-    <%= javascript_include_tag 'application' %>
-
-    <%= javascript_pack_tag 'application' %>
+    <div id="overall-container">
+      <div id="main">
+        <%= render 'shared/navbar' %>
+        <%= render 'shared/flashes' %>
+        <%= yield %>
+        <%= javascript_include_tag 'application' %>
+        <%= javascript_pack_tag 'application' %>
+      </div>
+    </div>
     <div class="footer">
-      <div class="footer-copyright">
-        This footer is made with  <i class="fas fa-heart"> </i>  by Celbretti!
+      <div class="container-fixed">
+        This footer is made with  <i class="fas fa-heart"> </i>  by <strong>Celbretti !</strong>
       </div>
     </div>
   </body>

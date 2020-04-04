@@ -1,23 +1,24 @@
-<p id="notice"><%#= notice %></p>
+<div class="show-container">
+  <p id="notice"><%#= notice %></p>
+  <p>
+    <%= @blog.date_created %>
+  </p>
 
-<p>
-  <%= @blog.date_created %>
-</p>
+  <h1>
+    <strong><%= @blog.title %></strong>
+  </h1>
 
-<p>
-  <strong><%= @blog.title %></strong>
-</p>
+  <p>
+    <%= @blog.content.html_safe %>
+  </p>
 
-<p>
-  <%= @blog.content %>
-</p>
-
-
-<p>
-  <% @blog.photos.each do |photo| %>
-    <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-  <% end %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+  <p>
+    <% @blog.photos.each do |photo| %>
+      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+  </p>
+  <div class="links">
+    <%= link_to 'Edit', edit_blog_path(@blog) %> |
+    <%= link_to 'Back', blogs_path %>
+  </div>
+</div>
