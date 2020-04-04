@@ -4,19 +4,12 @@
     <%= @blog.date_created %>
   </p>
 
-  <h1>
-    <strong><%= @blog.title %></strong>
-  </h1>
+  <h1><%= @blog.title %></h1>
 
   <p>
     <%= @blog.content.html_safe %>
   </p>
 
-  <p>
-    <% @blog.photos.each do |photo| %>
-      <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-    <% end %>
-  </p>
   <div class="links">
     <%= link_to 'Edit', edit_blog_path(@blog) %> |
     <%= link_to 'Back', blogs_path %>
